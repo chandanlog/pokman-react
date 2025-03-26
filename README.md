@@ -43,7 +43,7 @@ npm run dev
 The application will be available at:
 
 ```bash
-https://pokman-react.vercel.app/
+https://pokman-react.vercel.app
 ```
 
 ## How It Works
