@@ -15,7 +15,7 @@ export const fetchPokemons = async ({
   showFav = false,
 } = {}) => {
   try {
-    let url = `http://pokemon-api-sx3h.onrender.com/api/v1/pokemon?page=${page}&limit=${limit}`;
+    let url = `https://pokemon-api-sx3h.onrender.com/api/v1/pokemon?page=${page}&limit=${limit}`;
 
     if (searchTerm) url += `&searchTerm=${searchTerm}`;
     if (showFav) url += `&showFavourite=${showFav}`;
