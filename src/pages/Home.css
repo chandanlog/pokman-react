@@ -1,0 +1,32 @@
+.home-container {
+    width: 100%;
+    max-width: 1100px; /* Slightly reduced width for a modern look */
+    margin: auto;
+    padding: 24px;
+    background: #ffffff; /* Clean white background */
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    border-top: 4px solid #0a66c2; /* LinkedIn Blue accent */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for better interaction */
+.home-container:hover {
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .home-container {
+        padding: 16px;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-container {
+        padding: 12px;
+        box-shadow: none;
+        border-top: none;
+    }
+}

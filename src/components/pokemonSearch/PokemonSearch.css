@@ -1,0 +1,180 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #080c22;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #e63946, #f77f00);
+    padding: 15px 25px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.25);
+}
+.navbar-logo img {
+    height: 65px;
+}
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+.navbar-links li a:hover {
+    color: #ffdd57;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    background: url('ipl-stadium.jpg') no-repeat center center/cover;
+    position: relative;
+    border-bottom: 5px solid #f77f00;
+    text-align: center;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.hero-content {
+    position: relative;
+    color: white;
+}
+.hero h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.3);
+}
+.hero p {
+    font-size: 22px;
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+/* Search Section */
+.search-section {
+    width: 100%;
+    padding: 25px 0;
+    background: linear-gradient(90deg, #192759, #273d80);
+}
+.search-box {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    padding: 18px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+.search-input {
+    flex-grow: 1;
+    background: #f0f0f0;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+.search-input:focus {
+    border-color: #f77f00;
+    outline: none;
+}
+.search-button {
+    background-color: #f77f00;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    border: none;
+}
+.search-button:hover {
+    background-color: #e63946;
+}
+.example-search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+.example-search p {
+    font-size: 14px;
+    color: #555;
+}
+.search-example-btn {
+    background: none;
+    border: none;
+    color: #f77f00;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+.search-example-btn:hover {
+    color: #e63946;
+}
+
+@media screen and (max-width: 600px) {
+    .search-box {
+        width: 90%;
+    }
+    .search-form {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .search-input {
+        font-size: 14px;
+        padding: 12px;
+    }
+    .search-button {
+        padding: 12px 16px;
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 35px;
+    background: #080c22;
+    margin-top: 60px;
+    border-top: 4px solid #e63946;
+    color: #ffdd57;
+    font-size: 18px;
+}
