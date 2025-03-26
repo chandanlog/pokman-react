@@ -1,42 +1,81 @@
-# Pokemon Listing App
+# React Pokemon Listing App
 
 ## Overview
 
-This project is a React-based web application that displays a list of Pokémon fetched from an API. It features infinite scrolling, search functionality, and the ability to mark Pokémon as favorites. The application uses `useReducer`, `useEffect`, `useCallback`, and `useMemo` for optimized state management and performance.
+The **React Pokemon Listing App** is a web application that allows users to browse, search, and mark Pokemon as favorites. It features infinite scrolling for seamless navigation and efficient state management using React Hooks.
 
 ## Features
 
-- **Infinite Scrolling**: Load more Pokémon dynamically as the user scrolls.
-- **Search Functionality**: Filter Pokémon based on their names. (debounced search)
-- **Favorite Toggle**: Mark Pokémon as favorites and filter to view only favorites.
-- **Optimized Performance**: Utilizes `useReducer` for state management and `useCallback`/`useMemo` to prevent unnecessary re-renders.
+✅ **Infinite Scrolling** – Dynamically loads more Pokemon as the user scrolls.
+✅ **Search Functionality** – Search Pokemon by name with a debounced input.
+✅ **Favorite Toggle** – Mark and unmark Pokemon as favorites.
+✅ **Optimized Performance** – Utilizes `useReducer`, `useEffect`, `useCallback`, and `useMemo` for enhanced performance.
+✅ **Responsive Design** – Ensures a smooth experience across different screen sizes.
 
 ## Tech Stack
 
-- **Frontend**: React, React Hooks (useReducer, useEffect, useCallback, useMemo)
-- **Styling**: CSS
-- **Icons**: React Icons
-- **API**: [Express Pokémon API](https://pokemon-api-agde.onrender.com/)
+- **Frontend:** React, React Hooks (useReducer, useEffect, useCallback, useMemo)
+- **Styling:** CSS
+- **Icons:** React Icons
+- **API:** [Express Pokemon API](https://pokemon-api-agde.onrender.com/)
 
-### 1. Install Dependencies
+## Getting Started
+
+### 1️⃣ Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 2. Start the Development Server
+### 2️⃣ Set Up Environment Variables
+Create a `.env` file in the root directory and configure the API URL:
+
+```env
+VITE_API_BASE_URL=https://pokemon-api-agde.onrender.com/api/v1
+```
+
+### 3️⃣ Start the Development Server
 
 ```bash
 npm run dev
 ```
 
-The application will be available at `http://127.0.0.1:5173/`.
+The application will be available at:
+
+```bash
+https://pokman-react.vercel.app/
+```
 
 ## How It Works
 
-1. **Fetching Data:** Upon loading, the app fetches Pokémon data and stores it in the state.
-2. **Infinite Scroll:** The `Listing` component loads more Pokémon when the user scrolls down.
-3. **Search & Filter:** The `Search` component filters Pokémon by name and favorites.
-4. **Favorite Toggle:** Clicking the heart icon toggles a Pokémon as a favorite and updates the backend.
+1. **Fetching Data** – The app fetches Pokemon data from the API and stores it in the state.
+2. **Infinite Scroll** – The `Listing` component dynamically loads more Pokemon when the user scrolls down.
+3. **Search & Filter** – The `Search` component filters Pokemon by name and displays only favorite ones if selected.
+4. **Favorite Toggle** – Clicking the heart icon marks/unmarks a Pokemon as a favorite and updates the backend.
 
-# react-pokemon
+## Deployment
+
+To deploy the project, build it using:
+
+```bash
+npm run build
+```
+
+Then, host it using Vercel hosting provider.
+
+## API Documentation
+
+To explore the API endpoints, visit the Swagger documentation:
+
+```bash
+https://pokemon-api-sx3h.onrender.com/api-docs
+```
+
+## Contributing
+
+Feel free to contribute by submitting issues or creating pull requests. Make sure to follow best practices for clean and maintainable code.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
