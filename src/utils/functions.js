@@ -15,7 +15,7 @@ export const fetchPokemons = async ({
   showFav = false,
 } = {}) => {
   try {
-    let url = `http://localhost:5001/api/v1/pokemon?page=${page}&limit=${limit}`;
+    let url = `http://pokemon-api-sx3h.onrender.com/api/v1/pokemon?page=${page}&limit=${limit}`;
 
     if (searchTerm) url += `&searchTerm=${searchTerm}`;
     if (showFav) url += `&showFavourite=${showFav}`;
@@ -46,7 +46,7 @@ export const updateFavorites = async (pokemon) => {
     const isFavorite = pokemon.is_favourite === "1" ? "0" : "1";
 
     const response = await fetch(
-      `http://localhost:5001/api/v1/pokemon/${pokemon.id}/favourite/${isFavorite}`,
+      `https://pokemon-api-sx3h.onrender.com/api/v1/pokemon/${pokemon.id}/favourite/${isFavorite}`,
       {
         method: "PUT",
         headers: {
